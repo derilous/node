@@ -15,9 +15,10 @@ app.get('/example', (req, res) => {
 
 // Setting route params with :
 app.get('/example/:name/:age', (req, res) => {
-  // Console will ask for the params I mentioned in the URL
+  // Console will display the params I used in the URL as an object
   console.log(req.params);
-  res.send('example with route params');
+  //   getting the params I used in the URL to be displayed on the site with req
+  res.send(req.params.name + ' + ' + req.params.age);
 });
 
 // create the port for the user to access said route
