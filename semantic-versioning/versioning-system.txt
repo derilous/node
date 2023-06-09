@@ -2,4 +2,5 @@ How v numbers are done
 
 eg lodash: "^4.17.11" -> //major.minor.patch
                       -> // ^ denotes  the rules that I do not update major updates automatically. 
-                      -> // ~ denotes that I only download patch updates when I update npm and nothing else
+                      -> // ~ denotes that I only download patch updates when I npm and nothing else
+                      -> // no sign denotes that no updates will be downloaded for this package when i npm
